@@ -27,7 +27,7 @@ export default defineType({
             name: 'images',
             type: 'image',
             title: 'Images',
-           of:[{type: 'image'}]
+            of:[{type: 'image'}],
         }),
         defineField({
             name: 'tags',

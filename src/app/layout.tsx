@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/navigation/navbar";
 import { ThemeProvider } from "@/components/theme-provider"
 import MobileNav from '../components/navigation/mobile-nav';
-import Footer from "@/components/navigation/footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,12 +28,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar/> 
+          
             <MobileNav/>
-            <main className="pt-12">
             {children}
-            </main>
-            <Footer/>
+            
           </ThemeProvider>
 
       </body>

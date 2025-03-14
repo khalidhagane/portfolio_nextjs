@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import {ModeToggle} from './Modetoggle'
+import {ModeToggle} from './ModeToggle'
 import { navLinks } from '@/constants/nav-links'
 
 

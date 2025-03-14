@@ -8,13 +8,13 @@ export default defineType({
         defineField({
             name: "label",
             type: "string",
-            title: "label",
+            title: "Label",
             validation: (Rule) =>(Rule.required().min(3).max(10))
         }),
         defineField({
             name: "value",
             type: "number",
-            title: "percentage",
+            title: "Percentage",
             validation: (Rule) => (Rule.required().min(0).error("minmum value must be 1").max(100).error("max value must be 100"))
         }),
         defineField({

@@ -3,7 +3,7 @@ import React from 'react'
 import { buttonVariants } from '../ui/button';
 import { cn } from '@/lib/utils';
 
-const footer = () => {
+const Footer = () => {
 
     const currentYear = new Date().getFullYear();
   return (
@@ -27,4 +27,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer

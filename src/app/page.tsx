@@ -6,17 +6,28 @@ import AboutSection from '../containers/about';
 import ContactSection from '../containers/contact';
 import SkillsSection from '../containers/skills';
 import ProjectsSection from '../containers/projects';
+import ScrollToTop from "@/components/scroll-to-top";
+import Navbar from "@/components/navigation/Navbar";
+import Footer from "@/components/navigation/footer";
+
+
 
 export default function Home() {
   return (
-   <div  className="containet space-y-16 py-28 "> 
+   <main  className="pt-12 "> 
+        <Navbar/>
+        <div className="container space-y-16 py-28">
         <HomeSection/>
         <AboutSection/>
         <SkillsSection/>
         <ProjectsSection/>
         <ContactSection />
+        </div>
+     
+        <ScrollToTop/>
+        <Footer/>
 
-   </div>
+   </main>
   
   );
 }
